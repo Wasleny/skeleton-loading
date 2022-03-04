@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SkeletonItem = styled.div`
   width: ${(props) => (props.width ? props.width : "100%")};
-  height: ${(props) => (props.height ? props.height : "3%")};
+  height: ${(props) => (props.height ? props.height : "1.5vh")};
   margin: ${(props) => (props.margin ? props.margin : "5px 0")};
   border-radius: ${(props) =>
     props.borderRadius ? props.borderRadius : "10px"};
