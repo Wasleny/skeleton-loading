@@ -7,6 +7,8 @@
 - SkeletonContentWithImage
 - SkeletonContentWithPerfil
 
+## Online Examples
+<a href="https://skeleton-loading-chi.vercel.app/">Click here!</a>
 
 ## Components and Props
 
@@ -43,3 +45,5 @@
 </SkeletonContent>
 
 ```
+
+
