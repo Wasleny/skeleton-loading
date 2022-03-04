@@ -5,14 +5,12 @@ const SkeletonContentWithPerfil = ({ quantityTextItems, justify }) => {
     <>
       {justify === "left" && (
         <>
-          (
           <SkeletonItem
             height="50px"
             width="50px"
             borderRadius="100%"
             otherStyles="display:inline-block"
           />
-          )
           {quantityTextItems &&
             Array.from({ length: quantityTextItems }, (_, i) => i + 1).map(
               (item) => (
@@ -29,14 +27,12 @@ const SkeletonContentWithPerfil = ({ quantityTextItems, justify }) => {
 
       {justify === "center" && (
         <>
-          (
           <SkeletonItem
             height="50px"
             width="50px"
             borderRadius="100%"
             otherStyles="margin-left:auto;margin-right:auto;margin-bottom:10px"
           />
-          )
           {quantityTextItems &&
             Array.from({ length: quantityTextItems }, (_, i) => i + 1).map(
               (item) => (
