@@ -1,6 +1,6 @@
 import { SkeletonItem } from "../../styles-components/SkeletonItem";
 
-const SkeletonContentComment = ({ quantityItems, justify }) => {
+const SkeletonContentComment = ({ justify }) => {
   return (
     <>
       {justify === "left" && (
@@ -23,15 +23,14 @@ const SkeletonContentComment = ({ quantityItems, justify }) => {
               width="88%"
               otherStyles="margin-left:15%;"
             />
-            {quantityItems &&
-              Array.from({ length: 3 }, (_, i) => i + 1).map((item) => (
-                <SkeletonItem
-                  key={`text${item}`}
-                  height="8px"
-                  width="100%"
-                  otherStyles="margin-left:10px;"
-                />
-              ))}
+            {Array.from({ length: 3 }, (_, i) => i + 1).map((item) => (
+              <SkeletonItem
+                key={`text${item}`}
+                height="8px"
+                width="100%"
+                otherStyles="margin-left:10px;"
+              />
+            ))}
             <SkeletonItem
               height="8px"
               width="20%"
@@ -50,16 +49,19 @@ const SkeletonContentComment = ({ quantityItems, justify }) => {
           }}
         >
           <div style={{ width: "50%", padding: "10px" }}>
-            <SkeletonItem height="8px" width="85%" otherStyles="margin-left:15%;"  />
-            {quantityItems &&
-              Array.from({ length: 3 }, (_, i) => i + 1).map((item) => (
-                <SkeletonItem
-                  key={`text${item}`}
-                  height="8px"
-                  width="100%"
-                  otherStyles="margin-right:10px;"
-                />
-              ))}
+            <SkeletonItem
+              height="8px"
+              width="85%"
+              otherStyles="margin-left:15%;"
+            />
+            {Array.from({ length: 3 }, (_, i) => i + 1).map((item) => (
+              <SkeletonItem
+                key={`text${item}`}
+                height="8px"
+                width="100%"
+                otherStyles="margin-right:10px;"
+              />
+            ))}
             <SkeletonItem
               height="8px"
               width="20%"
