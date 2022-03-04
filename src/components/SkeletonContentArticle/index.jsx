@@ -35,7 +35,7 @@ const SkeletonContentArticle = ({ quantityTextItems, justify }) => {
             height="20px"
             width="50%"
             borderRadius="6px"
-            otherStyles="margin:0 auto 20px auto;"
+            margin="0 auto 20px auto;"
           />
           {quantityTextItems >= 1 && (
             <SkeletonItem width="95%" otherStyles="margin-left:30px" />
@@ -61,7 +61,7 @@ const SkeletonContentArticle = ({ quantityTextItems, justify }) => {
             height="20px"
             width="50%"
             borderRadius="6px"
-            otherStyles="margin:0 0 20px auto;"
+            margin="0 0 20px auto;"
           />
           {quantityTextItems >= 1 && (
             <SkeletonItem width="95%" otherStyles="margin-left:auto" />

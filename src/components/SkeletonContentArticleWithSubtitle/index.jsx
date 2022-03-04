@@ -41,13 +41,13 @@ const SkeletonContentArticleWithSubtitle = ({ quantityTextItems, justify }) => {
             height="20px"
             width="50%"
             borderRadius="6px"
-            otherStyles="margin:0 auto 5px auto;"
+            margin="0 auto 5px auto;"
           />
           <SkeletonItem
             height="8px"
             width="20%"
             borderRadius="6px"
-            otherStyles="margin:0 auto 20px auto;"
+            margin="0 auto 20px auto;"
           />
           {quantityTextItems >= 1 && (
             <SkeletonItem
@@ -80,13 +80,13 @@ const SkeletonContentArticleWithSubtitle = ({ quantityTextItems, justify }) => {
             height="20px"
             width="50%"
             borderRadius="6px"
-            otherStyles="margin:0 0 5px auto;"
+            margin="0 0 5px auto;"
           />
           <SkeletonItem
             height="8px"
             width="20%"
             borderRadius="6px"
-            otherStyles="margin:0 0 20px auto;"
+            margin="0 0 20px auto;"
           />
           {quantityTextItems >= 1 && (
             <SkeletonItem width="95%" otherStyles="margin-left:auto" />
